@@ -330,8 +330,17 @@
 }
 
       .hero-content h1 {
-        font-size: 30px;
+        font-size: 26px;
+        margin-bottom: 15px;
     }
+
+.hero-content p {
+    font-size: 14px;
+}
+
+.hero-area {
+    padding-bottom: 139px;
+}
 
     .design__content h1 {
         font-size: 20px;

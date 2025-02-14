@@ -795,7 +795,7 @@ li {
 .mobile__header {display: flex;align-items: center;justify-content: space-between;margin-bottom: 20px;}
 
 .mobile__menu__content {
-    height: 80vh;
+    height: 76vh;
     overflow: auto;
 }
 
@@ -830,7 +830,7 @@ li {
 .flex__scrolling .skapa__blk i {
     height: 150px;
 }
-.mobile__btm {position: absolute;bottom: 16px;left: 50%;transform: translateX(-50%);width: 100%;padding: 0 16px;}
+.mobile__btm {position: absolute;bottom: 26px;left: 50%;transform: translateX(-50%);width: 100%;padding: 0 16px;}
 
 .mobile__btm ul {
     display: flex;
