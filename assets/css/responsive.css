@@ -37,7 +37,6 @@
         margin: auto;
     }
     
-    .fun__text {}
     
     .fullvideo__blk {
         max-width: 80%;
@@ -46,6 +45,10 @@
     }
     .case__blk h6 {
         width: auto;
+    }
+    .Spara__wrp {
+        flex-direction: column;
+        align-items: start;
     }
 }
 
@@ -116,6 +119,22 @@
     
     .Pick__blk i {
         height: 160px;
+    }
+    .collection__items {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .Spara__wrp {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .Emoji__content .flex .thm_btn {
+        font-size: 14px;
+        padding: 0 18px;
+    }
+    
+    .Emoji__content h2 {
+        font-size: 33px;
     }
 }
 
@@ -251,6 +270,27 @@
     .skapa__blk i {
         height: 150px;
     }
+    .collection__items {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .Emoji__img {
+        border: none;
+        padding: 0;
+    }
+    
+    .Emoji__img img {
+        max-width: 400px;
+        height: 300px;
+    }
+    
+    .EmojiSwiper {
+        margin-top: 20px;
+        border-bottom: 1px solid #0002;
+    }
+    
+    .EmojiSwiper .swiper-wrapper {
+        padding-bottom: 40px;
+    }
 }
 
  
@@ -282,6 +322,8 @@
 --f64 : 40px;
 
 }
+
+.logo-area{margin: auto;}
 .header-area.shrink .header__top {
     opacity: 0;
     position: absolute;
@@ -498,6 +540,66 @@
     .footer-area {
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+        padding-bottom: 20px;
+    }
+    .collection__items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .skapa__blk-lg {
+        grid-row: span 1 / span 1;
+        grid-column: span 1 / span 1;
+    }
+    
+    .skapa__blk-lg .skapa__blk i {
+        height: 207px;
+    }
+    
+    .skapa__blk-lg .skapa__blk i img {
+        width: 100%;
+    }
+    .Emoji__img {
+        border: none;
+        padding: 0;
+    }
+    
+    .Emoji__img img {
+        max-width: 250px;
+        height: 250px;
+    }
+    
+    .EmojiSwiper {
+        margin-top: 20px;
+        border-bottom: 1px solid #0002;
+    }
+    
+    .EmojiSwiper .swiper-wrapper {
+        padding-bottom: 40px;
+    }
+    .Spara__wrp {
+        overflow: auto;
+        padding-top: 12px;
+    }
+    
+    .Spara__wrp > div {
+        width: max-content;
+        flex-shrink: 0;
+    }
+    
+    .Spara__content h6 {
+        font-size: 12px;
+    }
+    
+    .Spara__content p, .Spara__content p a {
+        font-size: 11px;
+    }
+    
+    .Emoji__content {
+        padding-left: 0;
+    }
+    
+    .product__title h2 {
+        font-size: 22px;
     }
 }
  

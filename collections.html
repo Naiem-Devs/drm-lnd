@@ -979,7 +979,7 @@
             <hr class="m-0 mb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-xxl-3">
+                    <div class="col-lg-4 col-xxl-3 d-none d-lg-block">
                         <div class="coll__filter">
                             <h4>Sortera</h4>
                             <div class="accordion" id="accordionExample">
@@ -1146,6 +1146,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none">
+                        <button type="button" class="coll__filter-btn"><i class="far fa-sliders-h"></i>  <span>Filtrera & Sortera</span></button>
                     </div>
                     <div class="col-lg-8 col-xxl-9">
                         <div class="collection__items v2">
@@ -1690,6 +1693,180 @@
                 </div>
             </div>
         </section>
+
+
+        <div class="side-bar Filter__side left-side">
+            <div class="side-bar__top">
+                <h5>Filter & Sortering</h5>
+                <button type="button" class="coll__filter-btns"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="coll__filter">
+                <h4>Sortera</h4>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            Sortera på: Standard
+                        </button>
+                      </h2>
+                      <div id="collapsefour" class="accordion-collapse collapse " aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="Sortera-list">
+                            <ul>
+                                <li><p>Standard</p></li>
+                                <li><a href="">Bästsäljare</a></li>
+                                <li><a href="">Lägsta pris</a></li>
+                                <li><a href="">Högsta pris</a></li>
+                                <li><a href="">Nyast</a></li>
+                                <li><a href="">A till Z</a></li>
+                                <li><a href="">Z till A</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <h4>Filtrera</h4>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Material
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="filter__opt">
+                            <ul>
+                                <li><a href="">Gummi</a></li>
+                                <li><a href="">Harts</a></li>
+                                <li><a href="">Lera</a></li>
+                                <li><a href="">Metall</a></li>
+                                <li><a href="">Plast</a></li>
+                                <li><a href="">Strass</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Produkttyp
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="filter__opt">
+                            <ul>
+                                <li><a href="">DRMZ</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Produktfärg
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="filter__opt color">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-1"></i>
+                                            <span>Blå</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-2"></i>
+                                            <span>Blandad</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-3"></i>
+                                            <span>Brun</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-4"></i>
+                                            <span>Dark Purple</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-5"></i>
+                                            <span>Grön</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-6"></i>
+                                            <span>Gul</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-7"></i>
+                                            <span>Guld</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-8"></i>
+                                            <span>Lila</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-9"></i>
+                                            <span>Orange</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-10"></i>
+                                            <span>Röd</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-11"></i>
+                                            <span>Rosa</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-12"></i>
+                                            <span>Silver</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-13"></i>
+                                            <span>Svart</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="color-14"></i>
+                                            <span>White</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--------- Section End ---------->
 
 
@@ -1887,247 +2064,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-$(document).on("scroll", function(){
 
-if ($(document).scrollTop() > 50){
-  $(".header-area").addClass("shrink");
-} else {
-  $(".header-area").removeClass("shrink");
-}
-
-});
-
-
-$(".Wishlist-btn").click(function(e){
-    e.preventDefault()
-    $(".Wishlist__side").toggleClass("show");
-    $("body").toggleClass("overflow-overly");
-});
-
-$(".mina-btn").click(function(e){
-    e.preventDefault()
-    $(".mina__dropdown").toggleClass("show");
-});
-
-$(".cart-btn").click(function(e){
-    e.preventDefault()
-    $(".Varukorg__side").toggleClass("show");
-    $("body").toggleClass("overflow-overly");
-});
-
-
-
-    // var swiper = new Swiper(".brandSwiper", {
-    //   slidesPerView: 6,
-    //   spaceBetween: 30,
-    //   centeredSlides: true,
-    //   freeMode: true,
-    //   loop: true,
-    //   autoplay: {
-    //     delay: 1000,
-    //     disableOnInteraction: false
-    //   }
-    // });
-
-new Swiper (".brandSwiper", {
-	autoplay: {
-		enabled: true,
-		delay: 0,
-		pauseOnMouseEnter: false,
-		disableOnInteraction: true,
-	},
-	centeredSlides: true,
-	loop: true,
-	navigation: false,
-	noSwipingClass: 'swiper-slide',
-	slidesPerView: '6',
-	spaceBetween: 15,
-	speed: 4000,
-    breakpoints: {
-        320: {
-          slidesPerView: 3,
-        },
-        420: {
-          slidesPerView: 4,
-        },
-        768: {
-          slidesPerView: 6,
-        },
-      },
-});
-
-    var swiper = new Swiper(".productSwiper", {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        340: {
-          slidesPerView: 2,
-        },
-        640: {
-          slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        992: {
-          slidesPerView: 4,
-        },
-        1220: {
-          slidesPerView: 5,
-        },
-        1500: {
-          slidesPerView: 6,
-        },
-        1650: {
-          slidesPerView: 7,
-        },
-        1850: {
-          slidesPerView: 8,
-        },
-      },
-    });
-
-    var swiper = new Swiper(".WishlistSwiper", {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-    var swiper = new Swiper(".shopSwiper", {
-      
-      spaceBetween: 40,
-      slidesPerGroupSkip: 4,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-        },
-        500: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 4,
-        }
-      },
-    });
-
-    var swiper = new Swiper(".videoSwiper", {
-      
-      spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        340: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-        1220: {
-          slidesPerView: 4,
-        },
-        1500: {
-          slidesPerView: 5,
-        },
-        1850: {
-          slidesPerView: 5,
-        },
-      },
-    });
-
-
-    var swiper = new Swiper(".videoModalSwiper", {
-      slidesPerView: 3,
-      spaceBetween: 100,
-      freeMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-
-
-    // video PLayer
-const playbutton = document.querySelector('.playbutton')
-let video = document.querySelector('.video-wrapper video')
-let started = false
-
-
-
-playbutton.addEventListener('click', () => {
-
-  if(video.paused) {
-    video.play()
-    playbutton.classList.add('playing')
-  } else {
-    video.pause()
-    playbutton.classList.remove('playing')
-  }
-})
-
-//only used if the controls attribute is taken off the video element
-// video.addEventListener('click', () => {
-  // if(video.paused) {
-  // video.play() 
-  // } else {
-  // video.pause()
-  // }
-// })
-
-
-video.addEventListener('ended', () => {
-  playbutton.classList.remove('playing')  
-})
-
-
-video.addEventListener('play', () => {
-  playbutton.classList.add('playing')  
-})
-
-
-video.addEventListener('pause', () => {
-  playbutton.classList.remove('playing')  
-})
-    </script>
 </body>
 
 </html>

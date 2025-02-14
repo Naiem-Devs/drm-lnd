@@ -325,6 +325,10 @@ li {
     gap: 20px;
 }
 
+.v2 .header__left__mobile button {
+    color: #000;
+}
+
 .header__right__mobile ul {
     display: flex;
     align-items: center;
@@ -334,6 +338,10 @@ li {
 
 .header__right__mobile ul a {
     filter: brightness(5.5) invert(1);
+}
+
+.v2 .header__right__mobile ul a {
+    filter: url();
 }
 
 
@@ -706,6 +714,11 @@ li {
     transition: all 250ms ease-in-out;
 }
 
+.v2 .humbergar span, 
+.v2 .humbergar span:before,.v2 .humbergar span:after {
+    background: #000;
+}
+
 .humbergar span:before {
     top: -7px;
 }
@@ -959,10 +972,22 @@ li {
     right: -500px;
     transition: all .3s ease-in-out;
     width: 100%;
+    top: 0;
 }
+
+.side-bar.left-side {
+    right: auto;
+    left: -500px;
+}
+
+.Filter__side.show {}
 
 .side-bar.show {
     right: 0;
+}
+
+.side-bar.left-side.show {
+    left: 0;
 }
 
 .Wishlist__side {}
@@ -1540,6 +1565,11 @@ li {
     padding: 80px 0;
 }
 
+.product-area.black {
+    color: #000;
+    background: no-repeat;
+}
+
 .container-fluid {}
 
 .row {}
@@ -1764,7 +1794,7 @@ li {
 }
 
 .shop__card img {
-    height: 680px;
+    height: clamp(21.875rem, 22.293vw + 16.998rem, 43.75rem);
     object-fit: cover;
     object-position: center;
     width: 100%;
@@ -1983,6 +2013,27 @@ li {
     color: #fff;
     padding-bottom: 100px;
 }
+
+.coll__filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-family: 'Gliker';
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.coll__filter-btn i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff3;
+    border-radius: 50%;
+    font-size: 16px;
+}
 .collection__items {
     grid-template-columns: repeat(5,minmax(0,1fr));
     display: grid;
@@ -1991,10 +2042,19 @@ li {
 .collection__link ul {
     display: flex;
     justify-content: center;
+    min-width: 1200px;
+}
+
+.collection__link {
+    overflow: auto;
 }
 
 .collection__link ul li {
     border-left: 1px solid #fff3;
+}
+
+.collection__link ul li:last-child {
+    border-right: 1px solid #fff3;
 }
 
 .collection__link ul a {
@@ -2041,7 +2101,37 @@ li {
 }
 
 
-.coll__filter {
+.Filter__side .coll__filter .filter__opt ul li a {border-color: #0003;}
+
+.coll__filter {}
+
+.Filter__side .Sortera-list {
+    color: #000;
+}
+
+.Filter__side .coll__filter {
+    padding: 20px;
+}
+
+.Filter__side  .filter__opt ul li a i {
+    border-color: #fff;
+    outline-color: #0002;
+}
+
+.Filter__side .filter__opt ul li a i {}
+
+.Filter__side  .coll__filter .accordion-item {
+    border-color: #0003;
+}
+
+.Sortera-list {}
+
+.Filter__side .coll__filter .accordion-button {
+    color: #000;
+}
+
+.Filter__side .coll__filter .accordion-button:after {
+    filter: brightness(0);
 }
 
 .coll__filter .accordion {
@@ -2159,9 +2249,11 @@ li {
     display: block;
     margin-bottom: 12px;
 }
-.Spara__content {width: max-content;margin: auto;border: 1px solid #0002;border-radius: 10px;position: relative;text-align: left;padding: 20px;padding-bottom: 0;margin-top: 40px;}
+.Spara__content {width: max-content;margin: auto;border: 1px solid #0002;border-radius: 10px;position: relative;text-align: left;padding: 15px;padding-bottom: 0;margin-top: 40px;}
 
-.Spara__content p {}
+.Spara__content p {
+    font-size: 12px;
+}
 
 .Spara__content p a {
     text-decoration: underline;
@@ -2209,9 +2301,225 @@ li {
 /*============DRMZ Area End =============*/
 
 
-/*============ Area Start =============*/
+/*============Emoji Area Start =============*/
+.Emoji-area {
+    padding-top: 10px;
+}
+.container {
+}
+.row {
+}
+.col-lg-7 {
+}
+.col-lg-6 {
+}
+.Emoji__img {display: flex;align-items: center;justify-content: center;border: 1px solid #0003;border-radius: 15px;height: 100%;padding: 50px;}
+.col-lg-5 {
+}
+.Emoji__content {padding-top: 30px;padding-left: 20px;}
 
-/*============ Area End =============*/
+.Emoji__content h5 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    margin-top: 24px;
+}
+
+.Emoji__content .card__img a {
+    border: 1px solid #0003;
+}
+
+.Emoji__content small {
+    margin-bottom: 16px;
+    display: block;
+}
+
+.Emoji__content small svg path {
+    stroke: green;
+}
+
+.Emoji__content .card__img {
+    justify-content: start;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.Emoji__content .flex {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 20px;
+    gap: 9px;
+}
+
+.Emoji__content b {
+    font-family: 'Gliker';
+    font-weight: 600;
+}
+
+.Emoji__content h2 {
+    font-family: 'Inter';
+    font-weight: 700;
+    margin: 0;
+}
+
+.Emoji__content label {
+    font-size: 10px;
+    font-family: 'Gliker';
+    background: #ABCFF0;
+    display: inline-block;
+    padding: 0 7px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.Emoji__link {
+}
+
+.Emoji__link label {}
+
+.Emoji__link label {}
+
+.Emoji__link ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.Emoji__link ul li a {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.Emoji__link ul img {
+    max-width: 12px;
+}
+.flex {
+}
+.pd_quantity {border: 2px solid #000;height: 50px;display: flex;align-items: center;justify-content: center;border-radius: 40px;padding: 0 10px;}
+
+.pd_quantity a {
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd_quantity input {
+    max-width: 30px;
+    text-align: center;
+    border: none;
+}
+.counter__decrement {
+}
+.counter__input {
+}
+.counter__increment {
+}
+.thm_btn {
+}
+.Emoji__content .flex .heart-icon {position: unset;border-left: 1px solid #0003;padding-left: 16px;margin-left: 8px;font-size: 24px;}
+.fal {
+}
+.fa-heart {
+}
+.lucide {
+}
+.lucide-box {
+}
+
+.text-green-600 {
+}
+.card__img {
+}
+.p-2 {
+}
+.Spara__wrp {display: flex;align-items: center;margin-bottom: 40px;gap: 20px;}
+.Spara__content {
+}
+.Mobilskal__box {}
+
+.Mobilskal__box h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+}
+
+.Mobilskal__box a {
+    display: flex;
+    align-items: center;
+    border: 1px solid #0002;
+    height: 113px;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.Mobilskal__box a span {
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+    font-family: 'Gliker';
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.Mobilskal__box a i {
+    width: 75px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.Mobilskal__box a i img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.accordion {
+}
+.faq__accordion {
+}
+.accordion-item {
+}
+.accordion-header {
+}
+.accordion-button {
+}
+.accordion-collapse {
+}
+.collapse {
+}
+.show {
+}
+.accordion-body {
+}
+.collapsed {
+}
+.Specifi__list {
+}
+
+.Specifi__list ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #0002;
+}
+
+.Specifi__list ul li:last-child {
+    border: none;
+}
+
+.Specifi__list label {
+    max-width: 170px;
+    width: 100%;
+    background: no-repeat;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .6;
+}
+.border-0 {
+}
+/*============Emoji Area End =============*/
 
 
 /*============ Area Start =============*/
@@ -2287,7 +2595,9 @@ li {
     border-bottom: 1px solid #0002;
 }
 
-.faq__accordion .accordion-item {}
+.accordion-item {
+    border-bottom: 1px solid #0002;
+}
 
 .faq__accordion .accordion-item button {
     padding-left: 0;
@@ -2296,6 +2606,7 @@ li {
     padding: 20px 0;
     font-weight: 600;
     text-align: left;
+    font-family: 'Gliker';
 }
 
 .faq__accordion .accordion-item button:hover {
@@ -2304,7 +2615,9 @@ li {
 
 .accordion-header {}
 
-.accordion-button {}
+.accordion-button {
+    border: none;
+}
 
 .collapsed {}
 
@@ -2337,7 +2650,14 @@ li {
 
 .faq__btns button {}
 
-.thm_btn {}
+.Emoji__content .flex .thm_btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-width: 2px;
+    font-size: 16px;
+}
 
 .v2 {}
 
@@ -2351,7 +2671,6 @@ li {
     padding: 50px 0;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    border-top: 3px solid red;
 }
 
 .footer__logo {

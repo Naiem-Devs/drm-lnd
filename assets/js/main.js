@@ -35,6 +35,12 @@
         $("body").toggleClass("overflow-overly");
     });
     
+    $(".coll__filter-btn,.coll__filter-btns").click(function(e){
+        e.preventDefault()
+        $(".Filter__side").toggleClass("show");
+        $("body").toggleClass("overflow-overly");
+    });
+    
     
     
         // var swiper = new Swiper(".brandSwiper", {
@@ -75,6 +81,7 @@
             },
           },
     });
+
     
         var swiper = new Swiper(".productSwiper", {
           slidesPerView: 2,
@@ -100,7 +107,7 @@
             992: {
               slidesPerView: 4,
             },
-            1220: {
+            1200: {
               slidesPerView: 5,
             },
             1500: {
@@ -111,6 +118,40 @@
             },
             1850: {
               slidesPerView: 8,
+            },
+          },
+        });
+    
+    
+        var swiper = new Swiper(".designSwiper", {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            340: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            992: {
+              slidesPerView: 4,
+            },
+            1500: {
+              slidesPerView: 5,
+            },
+            1850: {
+              slidesPerView: 5,
             },
           },
         });
@@ -126,6 +167,15 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+        });
+    
+        var swiper = new Swiper(".EmojiSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          }
         });
     
         var swiper = new Swiper(".shopSwiper", {
